@@ -9,7 +9,9 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@v3
+    - name: Install Django
+      run: pip install Django
     - name: Install pylint
       run: pip install Pylint
-    - name: Linting
+f    - name: Linting
       run: pylint --recursive=y upgraded_chainsaw/
