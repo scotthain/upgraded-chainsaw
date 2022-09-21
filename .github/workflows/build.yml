@@ -14,4 +14,4 @@ jobs:
     - name: Install pylint
       run: pip install Pylint
     - name: Linting
-      run: pylint --recursive=y upgraded_chainsaw/
+      run: pylint --recursive=y upgraded_chainsaw api
